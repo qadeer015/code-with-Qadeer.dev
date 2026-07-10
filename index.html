@@ -2,107 +2,126 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abdul Qadeer : ) </title>
-    <link rel="stylesheet" href="home_page.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Abdul Qadeer — Web Developer</title>
+  <meta name="description" content="Abdul Qadeer — Web developer (HTML, CSS, JavaScript). Projects, experience, and contact information.">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root{--accent:#6c63ff;--muted:#6b7280;--bg:#f7f7fb;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.5;background:var(--bg);color:#111;margin:0}
+    .page{max-width:980px;margin:32px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#9f7aea);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:28px}
+    h1{margin:0;font-size:1.6rem}
+    .lead{color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    main{background:var(--card);padding:20px;border-radius:12px}
+    aside{background:var(--card);padding:20px;border-radius:12px;height:max-content}
+    section+section{margin-top:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{background:#eef2ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:0.9rem}
+    .projects ol{padding-left:20px;margin:0}
+    .contact a{color:var(--accent);text-decoration:none}
+    .muted{color:var(--muted);font-size:0.95rem}
+    .job{border-left:3px solid var(--accent);padding:12px 14px;background:linear-gradient(180deg,#fff,#fbfbff);border-radius:8px}
+    footer{margin-top:20px;color:var(--muted);font-size:0.9rem;text-align:center}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px;font-size:20px}}
+  </style>
 </head>
 
 <body>
+  <div class="page">
     <header>
-        <div class="container">
-            <h1>Abdul Qadeer</h1>
-            <p> Software
-                <span>
-                    <button class="button" data-text="Awesome">
-                        <span class="actual-text">&nbsp;Developer&nbsp;</span>
-                        <span aria-hidden="true" class="hover-text">&nbsp;Developer&nbsp;</span>
-                    </button>
-                </span>
-                Inshallah
-            </p>
-        </div>
+      <div class="avatar">AQ</div>
+      <div>
+        <h1>Abdul Qadeer</h1>
+        <div class="lead">Software Developer • Web Developer — HTML, CSS, JavaScript</div>
+        <div class="muted">Currently learning and building projects at CodewithInfinitiDev.online</div>
+      </div>
     </header>
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Information</h2>
+
+    <div class="grid">
+      <main>
+        <section id="summary">
+          <h2 style="margin-top:0">Summary</h2>
+          <p>I build small, accessible web applications using modern HTML, CSS, and vanilla JavaScript. I enjoy turning ideas into working UI, learning new tools, and collaborating with other developers. Deployed this portfolio to GitHub Pages as a demonstration of my work.</p>
+        </section>
+
+        <section id="experience">
+          <h2>Experience</h2>
+          <div class="job">
+            <h3 style="margin:0">Learner — Web Development (CodewithInfinitiDev.online)</h3>
+            <p class="muted" style="margin:6px 0 10px">Duration: 3 months — Present</p>
             <ul>
-                <li>Email:
-                    <a href="mailto:rabdulqadeer96@gmail.com">rabdulqadeer96@gmail.com</a>
-                </li>
-                <li>Phone:
-                    <a href="tel:+923032414234">(+92) 303-2414234</a>
-                </li>
-                <li>LinkedIn:
-                    <a href="https://www.linkedin.com/in/qadeer015/">linkedin.com/in/qadeer015</a>
-                </li>
-                <li>
-                    GitHub:
-                    <a href="https://github.com/qadeer015">https://github.com/qadeer015</a>
-                </li>
-                <li>
-                    YouTube:
-                    <a href="https://www.youtube.com/channel/UC8-rj_oDuKJ8bY7-kmUNDqg" target="_blank">Infiniti dev</a>
-                </li>
+              <li>Built multiple small web projects (games, forms, quizzes, calculators) using HTML, CSS, and JavaScript.</li>
+              <li>Practiced responsive layout, DOM manipulation, and basic client-side state management.</li>
+              <li>Learned version control with Git and deployed projects on GitHub Pages.</li>
+              <li>Collaborated with peers and followed feedback to improve accessibility and UX.</li>
             </ul>
-        </div>
-    </section>
-    <section id="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="job">
-                <h3>Learning Web Development at <a
-                        href="https://codewithinfinitidev.online/">CodewithInfinitiDev.online</a> </h3>
-                <p><strong>Duration:</strong> 3 Months - Present</p>
-                <p>Developed web applications using JavaScript, HTML, and CSS. Collaborated with cross-functional teams
-                    to deliver high-quality products.</p>
-            </div>
-            <div class="progress">
-                <ol>
-                    <li>
-                        <a href="/week-1/index.html">First page</a>
-                    </li>
-                    <li>
-                        <a href="/week-2/Qadeer_ludo/Ludo.html">Ludo Game</a>
-                    </li>
-                    <li>
-                        <a href="/week-3/forms/first_form.html">Forms</a>
-                    </li>
-                    <li>
-                        <a href="/week-4/lms.html">LMS</a>
-                    </li>
-                    <li>
-                        <a href="/week-6/exam.html">Take Quiz</a>
-                    </li>
-                    <li>
-                        <a href="/week-9/index.html">Calculator</a>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </section>
-    <section id="education">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="education">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p><strong>University:</strong> Virtual University Of Pakistan </p>
-                <p><strong>Graduation Year:</strong> in progress</p>
-            </div>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>c, c++</li>
-                <li>java,SQL </li>
-                <li>ruby, rails</li>
-                <li> </li>
-            </ul>
-        </div>
-    </section>
+          </div>
+        </section>
+
+        <section id="projects" class="projects">
+          <h2>Selected projects</h2>
+          <ol>
+            <li><a href="/week-1/index.html">First page (week-1)</a> — simple landing/demo page.</li>
+            <li><a href="/week-2/Qadeer_ludo/Ludo.html">Ludo Game (week-2)</a> — interactive board game implemented with JavaScript.</li>
+            <li><a href="/week-3/forms/first_form.html">Forms (week-3)</a> — form handling and validation examples.</li>
+            <li><a href="/week-4/lms.html">LMS (week-4)</a> — layout and content structure for a learning management page.</li>
+            <li><a href="/week-6/exam.html">Quiz (week-6)</a> — basic quiz UI and scoring.</li>
+            <li><a href="/week-9/index.html">Calculator (week-9)</a> — calculator built with JavaScript.</li>
+          </ol>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+          <div>
+            <strong>Bachelor of Science in Computer Science</strong>
+            <div class="muted">Virtual University of Pakistan — in progress</div>
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <section id="contact" class="contact">
+          <h3 style="margin-top:0">Contact</h3>
+          <p class="muted">Email: <a href="mailto:rabdulqadeer96@gmail.com">rabdulqadeer96@gmail.com</a></p>
+          <p class="muted">Phone: <a href="tel:+923032414234">+92 303 2414234</a></p>
+          <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/qadeer015/" target="_blank" rel="noopener">linkedin.com/in/qadeer015</a></p>
+          <p class="muted">GitHub: <a href="https://github.com/qadeer015" target="_blank" rel="noopener">github.com/qadeer015</a></p>
+          <p class="muted">YouTube: <a href="https://www.youtube.com/channel/UC8-rj_oDuKJ8bY7-kmUNDqg" target="_blank" rel="noopener">Infiniti dev</a></p>
+        </section>
+
+        <section id="skills" style="margin-top:18px">
+          <h3 style="margin-top:0">Skills</h3>
+          <div class="skills">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">C</span>
+            <span class="pill">C++</span>
+            <span class="pill">Java</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Ruby</span>
+            <span class="pill">Rails</span>
+          </div>
+        </section>
+
+        <section style="margin-top:18px">
+          <h3 style="margin-top:0">Deployment</h3>
+          <p class="muted">This site is deployed to GitHub Pages: <a href="https://qadeer015.github.io/code-with-Qadeer.dev/" target="_blank" rel="noopener">qadeer015.github.io/code-with-Qadeer.dev</a></p>
+        </section>
+
+      </aside>
+    </div>
+
+    <footer>
+      Made with HTML, CSS & JavaScript • © Abdul Qadeer
+    </footer>
+  </div>
 </body>
 
 </html>
