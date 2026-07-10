@@ -1,119 +1,46 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
+/* home_page.css - professional UI improvements */
+:root{
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --accent: #3b82f6;
+  --muted: #6b7280;
+  --text: #0f172a;
+  --radius: 12px;
 }
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:var(--text);background:var(--bg)}
+.container{max-width:980px;margin:0 auto;padding:28px}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.brand{display:flex;gap:14px;align-items:center}
+.avatar{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:22px}
+.name{font-weight:700;font-size:1.1rem}
+.role{color:var(--muted);font-size:0.95rem}
+.nav a{margin-left:14px;color:var(--muted);text-decoration:none;font-weight:600}
+.site-header{background:transparent;padding:18px 0}
+.hero{display:grid;grid-template-columns:1fr 320px;gap:22px;align-items:start;padding-top:6px}
+.hero-left h1{font-size:1.9rem;margin:0 0 8px}
+.lead{color:var(--muted);margin:0 0 12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700;border:1px solid transparent}
+.btn.primary{background:var(--accent);color:#fff}
+.btn.ghost{background:transparent;border-color:#e6eefc;color:var(--accent);margin-left:10px}
+.card{background:var(--card);padding:16px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(12,15,30,0.06)}
+.summary-card ul{margin:8px 0 0;padding-left:16px;color:var(--muted)}
+.job ul{margin:8px 0 0;padding-left:18px}
+h2{margin-top:0}
+.projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:10px}
+.project{padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(59,130,246,0.06)}
+.project h4{margin:0 0 6px}
+.project a{color:var(--accent);text-decoration:none}
+.skills{display:flex;flex-wrap:wrap;gap:8px}
+.skills span{background:#eef2ff;color:var(--accent);padding:8px 10px;border-radius:999px;font-weight:700}
+.muted{color:var(--muted)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.site-footer{padding:18px 0;color:var(--muted);text-align:center}
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin: 0;
-    font-size: 1.2em;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-section {
-    padding: 20px 0;
-}
-
-h2 {
-    color: #333;
-    margin-bottom: 10px;
-    font-size: 1.8em;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    padding: 5px 0;
-}
-
-.job,
-.education {
-    margin-bottom: 20px;
-}
-
-h3 {
-    margin: 0;
-    color: #555;
-}
-
-p {
-    margin: 5px 0;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-}
-
-.progress {
-    border: 2px solid black;
-    width: fit-content;
-    padding-right: 190px;
-}
-
-/* === removing default button style ===*/
-.button {
-    margin: 0;
-    height: auto;
-    background: transparent;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-}
-
-/* button styling */
-.button {
-    --border-right: 6px;
-    --text-stroke-color: rgba(255, 255, 255, 0.6);
-    --animation-color: #37FF8B;
-    --fs-size: 2em;
-    letter-spacing: 3px;
-    text-decoration: none;
-    font-size: var(--fs-size);
-    font-family: "Arial";
-    position: relative;
-    color: transparent;
-    -webkit-text-stroke: 1px var(--text-stroke-color);
-}
-
-/* this is the text, when you hover on button */
-.hover-text {
-    position: absolute;
-    box-sizing: border-box;
-    content: attr(data-text);
-    color: var(--animation-color);
-    width: 0%;
-    inset: 0;
-    border-right: var(--border-right) solid var(--animation-color);
-    overflow: hidden;
-    transition: 0.5s;
-    -webkit-text-stroke: 1px var(--animation-color);
-}
-
-/* hover */
-.button:hover .hover-text {
-    width: 100%;
-    filter: drop-shadow(0 0 23px var(--animation-color))
+/* Responsive */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .nav a{margin-left:10px}
 }
